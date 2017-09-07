@@ -16,21 +16,25 @@ namespace SortApp
 
             // сортировка
             int temp;
-            for (int i = 0; i < nums.Length-1; i++)
+            for (int i = 0; i < nums.Length-1; i++) //коментарий
             {
                 for (int j = i + 1; j < nums.Length; j++)
                 {
                     if (nums[i] > nums[j])
                     {
-                        temp = nums[i];
+                        temp = nums[i]/*тоже комент*/;
                         nums[i] = nums[j];
                         nums[j] = temp;
                     }
                 }
             }
+			/*
+				комментарий
+				еще комент
+			*/
 
             // вывод
-            Console.WriteLine("Вывод отсортированного массива");
+            Console.WriteLine("Вывод отсортированного /// массива");
             for (int i = 0; i < nums.Length; i++)
             {
                 Console.WriteLine(nums[i]);
